@@ -1,0 +1,16 @@
+diff --git a/system/build.prop b/system/build.prop
+--- a/system/build.prop
++++ b/system/build.prop
+@@ -150,6 +150,15 @@
+ # MicroG Support
+ ro.microg.device.signature=true
+ ro.security.fake.cross_signed=true
++
++# Enhanced MicroG features
++ro.microg.nlp.backend.enabled=true
++ro.microg.nlp.geocoder=true
++
++# Privacy features
++ro.microg.saftynet.bypass=true
++ro.microg.fake.signature=true
++ro.microg.dynamic.modules=true 

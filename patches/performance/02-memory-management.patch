@@ -1,0 +1,16 @@
+diff --git a/system/etc/prop.default b/system/etc/prop.default
+--- a/system/etc/prop.default
++++ b/system/etc/prop.default
+@@ -90,6 +90,15 @@
+ # Memory Management
+ ro.config.fha_enable=true
+ ro.sys.fw.bg_apps_limit=32
++
++# Enhanced memory features
++ro.config.dha_cached_min=8
++ro.config.dha_empty_init=32
++ro.config.dha_empty_min=8
++
++# RAM optimization
++ro.config.ram_compression=true
++ro.sys.fw.trim_cache_percent=100
