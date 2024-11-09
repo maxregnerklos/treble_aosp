@@ -1,0 +1,15 @@
+diff --git a/system/build.prop b/system/build.prop
+--- a/system/build.prop
++++ b/system/build.prop
+@@ -120,6 +120,14 @@
+ # GMS Integration
+ ro.com.google.gmsversion=15_202403
+ ro.com.google.clientidbase=android-google
++ro.config.gms.enabled=true
++
++# GMS Core optimizations
++ro.config.gms.background_enable=true
++ro.gms.drivesync.enabled=true
++
++# Play Store optimization
++ro.com.google.play.core=true 

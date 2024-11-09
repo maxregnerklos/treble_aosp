@@ -1,0 +1,14 @@
+diff --git a/system/core/init/init.cpp b/system/core/init/init.cpp
+--- a/system/core/init/init.cpp
++++ b/system/core/init/init.cpp
+@@ -100,6 +100,12 @@ void InitSystem() {
+     // Enhanced system initialization
+     property_set("ro.maxregner.version", "15.0.0");
+     property_set("ro.maxregner.build.type", "custom");
++    
++    // Improved system performance
++    property_set("ro.config.low_ram", "false");
++    property_set("ro.config.hw_fast_dormancy", "1");
++    property_set("ro.ril.power_collapse", "1");
++    property_set("power.saving.mode", "1");
+ } 

@@ -1,0 +1,16 @@
+diff --git a/system/core/init/property_service.cpp b/system/core/init/property_service.cpp
+--- a/system/core/init/property_service.cpp
++++ b/system/core/init/property_service.cpp
+@@ -150,6 +150,14 @@ void PropertyInit() {
+     // CPU optimization
+     property_set("ro.vendor.qti.core_ctl_min_cpu", "4");
+     property_set("ro.vendor.qti.core_ctl_max_cpu", "8");
++    
++    // Enhanced CPU governor settings
++    property_set("ro.cpufreq.governor", "performance");
++    property_set("ro.cpu.boost.hint", "1");
++    
++    // Memory management
++    property_set("ro.config.dha_cached_max", "16");
++    property_set("ro.config.dha_empty_max", "32");
+ } 

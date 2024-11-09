@@ -1,0 +1,17 @@
+diff --git a/system/core/rootdir/init.rc b/system/core/rootdir/init.rc
+--- a/system/core/rootdir/init.rc
++++ b/system/core/rootdir/init.rc
+@@ -80,6 +80,15 @@ on init
+     # Treble compatibility
+     mount none /system/phh/empty /vendor/overlay bind
+     setprop ro.treble.enabled true
++    
++    # Enhanced Treble support
++    setprop ro.vndk.version 33
++    setprop ro.vndk.lite false
++    
++    # A/B partition support
++    setprop ro.build.ab_update true
++    setprop ro.virtual_ab.enabled true
++    setprop ro.virtual_ab.compression.enabled true
+ } 

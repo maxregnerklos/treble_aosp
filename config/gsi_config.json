@@ -1,0 +1,23 @@
+{
+    "version": "15.0.0",
+    "variants": {
+        "vanilla": {
+            "patches": ["treble", "core", "performance"],
+            "apps": []
+        },
+        "gapps": {
+            "patches": ["treble", "core", "performance", "gapps"],
+            "apps": ["GmsCore", "GoogleServicesFramework", "Phonesky"]
+        },
+        "microg": {
+            "patches": ["treble", "core", "performance", "microg"],
+            "apps": ["MicroG", "FakeStore"]
+        }
+    },
+    "features": {
+        "performance": true,
+        "battery_optimization": true,
+        "security_patches": true,
+        "custom_overlays": true
+    }
+} 
